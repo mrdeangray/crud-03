@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
 
 const DeleteLocation = () => {
-  return (
-    <div>DeleteLocation</div>
-  )
-}
+  const { location } = useParams();
+  return <div>Delete: {location}</div>;
+};
 
-export default DeleteLocation
+export default DeleteLocation;
